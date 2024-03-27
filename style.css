@@ -1,179 +1,267 @@
 @font-face {
-    font-family: Gordita;
-    src:url(fonts/Gordita\ Bold.otf)
- }
- 
- @font-face {
-     font-family: Gordita-2;
-     src:url(fonts/Gordita\ Regular.otf)
-  }
- 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Gordita-2;
-    background-color: #fff;
-  }
- 
-  ::-webkit-scrollbar {
-   width: 4px;
-  }
- 
-  ::-webkit-scrollbar-track {
-   box-shadow: inset 0 0 2px grey;
-   border-radius: 10px;
-  }
- 
-  ::-webkit-scrollbar-thumb {
-   background: #57F287;
-   border-radius: 10px;
-  }
- 
-  /* NAVBAR */
-  
-  a {
-    text-decoration: none;
-  }
-  
-  li {
-    list-style: none;
-  }
- 
- .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #fff;
-    color: #1e224f;
-  }
-  
-  .nav-links a {
-    color: #1e224f;
-    font-weight: bold;
-  }
-  
-  .logo {
-    font-size: 30px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .menu {
-    display: flex;
-    gap: 1em;
-    font-size: 18px;
-  }
-  
-  .menu li {
-    padding: 5px 14px;
-  }
- 
-  a:hover {
-   color: #57F287;
-  }
- 
- input[type=checkbox] {
-    display: none;
-  } 
- 
-  .hamburger {
-    display: none;
-    font-size: 24px;
-    user-select: none;
-    cursor: pointer;
-  }
-  
-  @media (max-width: 768px) {
-   .menu {
-      display:none;
-      position: absolute;
-      background-color: #fff;
-      right: 0;
-      left: 0;
-      text-align: center;
-      padding: 16px 0;
-    }
- 
-    .menu li + li {
-      margin-top: 12px;
-    }
-  
-    input[type=checkbox]:checked ~ .menu {
-      display: block;
-    }
-  
-    .hamburger {
-      display: block;
-    }
-  }
- 
-  /* HOME */
- 
- .home-1 {
-   height: 350px;
-   width: 100%;
- }
- 
- .title-1 {
-   color: #1e224f;
-   font-size: 45px;
-   text-align: center;
-   font-family: Gordita;
-   font-weight: bold;
-   position: relative;
-   top: 100px;
- }
- 
- .about-1 {
-   color: #1e224f;
-   font-size: 20px;
-   text-align: center;
+  font-family: Gordita;
+  src:url(fonts/Gordita\ Bold.otf)
+}
+
+@font-face {
    font-family: Gordita-2;
-   font-weight: bold;
-   position: relative;
-   top: 100px;
- }
- 
- .btn-1 {
-   position: relative;
-   display: block;
-   padding: 15px 30px;
-   text-align: center;
-   font-size: 18px;
-   letter-spacing: 1px;
-   text-decoration: none;
+   src:url(fonts/Gordita\ Regular.otf)
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Gordita-2;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar {
+ width: 4px;
+}
+
+::-webkit-scrollbar-track {
+ box-shadow: inset 0 0 2px grey;
+ border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+ background: #57F287;
+ border-radius: 10px;
+}
+
+/* NAVBAR */
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  color: #1e224f;
+}
+
+.nav-links a {
+  color: #1e224f;
+  font-weight: bold;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+
+a:hover {
+ color: #57F287;
+}
+
+input[type=checkbox] {
+  display: none;
+} 
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+ .menu {
+    display:none;
+    position: absolute;
+    background-color: #fff;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .menu li + li {
+    margin-top: 12px;
+  }
+
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* HOME - 1 */
+
+.home-1 {
+ height: 1000px;
+ width: 100%;
+}
+
+.title-1 {
+ color: #1e224f;
+ font-size: 45px;
+ text-align: center;
+ font-family: Gordita;
+ font-weight: bold;
+ position: relative;
+ top: 100px;
+}
+
+.about-1 {
+ color: #1e224f;
+ font-size: 20px;
+ text-align: center;
+ font-family: Gordita-2;
+ font-weight: bold;
+ position: relative;
+ top: 100px;
+}
+
+.btn-1 {
+ position: relative;
+ display: block;
+ padding: 15px 30px;
+ text-align: center;
+ font-size: 18px;
+ letter-spacing: 1px;
+ text-decoration: none;
+ position: relative;
+ top: 120px;
+ margin: auto;
+ color: #1e224f;
+ background: transparent;
+ cursor: pointer;
+ transition: ease-out 0.5s;
+ border: 2px solid #57F287;
+ border-radius: 10px;
+ box-shadow: inset 0 0 0 0 #57F287;
+}
+
+.btn-1:hover {
+ color: #fff;
+ background-color: #57F287;
+}
+
+@media (max-width: 768px) {
+ .home-1 {
    position: relative;
    top: 120px;
-   margin: auto;
-   color: #1e224f;
-   background: transparent;
-   cursor: pointer;
-   transition: ease-out 0.5s;
-   border: 2px solid #57F287;
-   border-radius: 10px;
-   box-shadow: inset 0 0 0 0 #57F287;
  }
- 
- .btn-1:hover {
-   color: #fff;
-   background-color: #57F287;
- }
- 
- @media (max-width: 768px) {
-   .home-1 {
-     position: relative;
-     top: 120px;
-   }
- }
- 
+}
+
+.web-ui {
+ position: relative;
+ top: 200px;
+ display: block;
+ margin: auto;
+ width: 1100px;
+}
+
+@media (max-width: 768px) {
  .web-ui {
    position: relative;
-   display: block;
-   margin: auto;
-   width: 1100px;
+   top: 200px;
+   width: 550px;
  }
+}
+
+
+/* HOME - 2 */
+
+.home-2 {
+ height: 900px;
+ width: 100%;
+ background-color: #e1e2f2;
+}
+
+.feature-title {
+ font-size: 30px;
+ color: #1e224f;
+ position: relative;
+ top: 20px;
+}
+
+.feature-about {
+ font-size: 16px;
+ font-weight: bold;
+ color: #1e224f;
+ position: relative;
+ top: 18px;
+}
+
+.feature-1 {
+ background-color: #fff;
+ height: 260px;
+ padding: 26px;
+ width: 360px;
+ position: relative;
+ float: left;
+ left: 9%;
+ top: 100px;
+ border-radius: 20px;
+}
+
+.Image-1 {
+ width: 50px;
+}
+
+.feature-2 {
+ background-color: #fff;
+ height: 260px;
+ padding: 26px;
+ width: 360px;
+ position: relative;
+ float: left;
+ left: 10%;
+ top: 100px;
+ border-radius: 20px;
+}
+
+.Image-2 {
+ width: 50px;
+}
+
+.feature-3 {
+ background-color: #fff;
+ height: 260px;
+ padding: 26px;
+ width: 560px;
+ position: relative;
+ float: right;
+ right: 50%;
+ top: 375px;
+ border-radius: 20px;
+}
+
+.Image-3 {
+ width: 50px;
+}
+
+.Image-4 {
+ position: relative;
+ float: right;
+ right: 6%;
+ bottom: 140px;
+}
